@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 461306134}
   - component: {fileID: 461306133}
   - component: {fileID: 461306132}
+  - component: {fileID: 461306136}
   m_Layer: 0
   m_Name: Cube2
   m_TagString: Untagged
@@ -516,6 +517,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &461306136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461306131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4079c42f1322fe7418dbb8fdb33530cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: db323193f74baf24aa4169cbec33942d, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 711470642}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LogToConsole
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: shush
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &628457012
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +557,7 @@ GameObject:
   - component: {fileID: 628457015}
   - component: {fileID: 628457014}
   - component: {fileID: 628457013}
+  - component: {fileID: 628457017}
   m_Layer: 0
   m_Name: Cube1
   m_TagString: Untagged
@@ -624,6 +654,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &628457017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628457012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7dc103bf3f69664590e68da850d8ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onKeyPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 711470642}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LogToConsole
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AAAAAAAAAAAAAAAAA
+          m_BoolArgument: 0
+        m_CallState: 2
+  onSimpleEventTriggered: {fileID: 11400000, guid: db323193f74baf24aa4169cbec33942d, type: 2}
+  keyCode: 32
+--- !u!1 &711470641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711470643}
+  - component: {fileID: 711470642}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &711470642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711470641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc3051b30849f943a899ae13eed935a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &711470643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711470641}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,3 +786,4 @@ SceneRoots:
   - {fileID: 47075652}
   - {fileID: 628457016}
   - {fileID: 461306135}
+  - {fileID: 711470643}
