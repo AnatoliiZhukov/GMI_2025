@@ -119,37 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &47075651
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 47075652}
-  m_Layer: 0
-  m_Name: Pointer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &47075652
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47075651}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +391,7 @@ GameObject:
   - component: {fileID: 461306132}
   - component: {fileID: 461306136}
   m_Layer: 0
-  m_Name: Cube2
+  m_Name: Cube2 (EventListener)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,7 +511,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: shush
+          m_StringArgument: W
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &628457012
@@ -559,7 +528,7 @@ GameObject:
   - component: {fileID: 628457013}
   - component: {fileID: 628457017}
   m_Layer: 0
-  m_Name: Cube1
+  m_Name: Cube1 (EventCaller)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -666,23 +635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7dc103bf3f69664590e68da850d8ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onKeyPressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 711470642}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LogToConsole
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: AAAAAAAAAAAAAAAAA
-          m_BoolArgument: 0
-        m_CallState: 2
-  onSimpleEventTriggered: {fileID: 11400000, guid: db323193f74baf24aa4169cbec33942d, type: 2}
   keyCode: 32
+  onExampleEventTriggered: {fileID: 11400000, guid: db323193f74baf24aa4169cbec33942d, type: 2}
 --- !u!1 &711470641
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711470641}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -769,7 +723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832575517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -780,10 +734,9 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
-  - {fileID: 410087041}
-  - {fileID: 832575519}
-  - {fileID: 47075652}
   - {fileID: 628457016}
   - {fileID: 461306135}
   - {fileID: 711470643}
+  - {fileID: 410087041}
+  - {fileID: 832575519}
+  - {fileID: 330585546}
