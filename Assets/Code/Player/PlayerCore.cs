@@ -41,6 +41,9 @@ namespace Player
         private void Start()
         {
             _cameraTransform = _camera.transform;
+            
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         private void Update()

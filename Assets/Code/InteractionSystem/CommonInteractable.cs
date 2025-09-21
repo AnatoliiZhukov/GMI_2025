@@ -9,9 +9,12 @@ namespace InteractionSystem
     public class CommonInteractable : MonoBehaviour, IInteractable
     {
         [SerializeField] private UnityEvent onInteractTriggered;
+        [SerializeField] private bool bInteractionLocked = false;
         
-        public void Interact()
+        public virtual void Interact()
         {
+            if(bInteractionLocked) return;
+            
             onInteractTriggered?.Invoke();
         }
     }
