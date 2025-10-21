@@ -159,7 +159,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 0
+  m_Height: 1.8
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f147078ecbecdef4fa2089ee9481765a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  _speed: 10
 --- !u!114 &8777620409957334457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,12 +191,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be1173b92a869e4a96b84c1862d76f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upKey: 101
-  downKey: 113
-  interactKey: 102
-  lookSensitivity: 1
-  topClamp: 90
-  bottomClamp: -90
+  _interactKey: 102
+  _toggleNoclipKey: 110
+  _upKey: 101
+  _downKey: 113
+  _lookSensitivity: 0.25
+  _topClamp: 90
+  _bottomClamp: -90
 --- !u!114 &887303714462147972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,4 +211,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactRange: 3
-  debugMode: 1
